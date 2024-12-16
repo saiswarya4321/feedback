@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+</head>
+<body style="padding: 20px;margin: 0;display: flex;flex-direction: column;justify-content:center;align-items: center;">
+    
+        <h1 style="text-align: center;margin-top: 30px; font-size: 40px;color: rgb(13, 7, 94);font-family:Verdana, Geneva, Tahoma, sans-serif;">Feedback form</h1>
+        <br>
+        <form action="" method="get"  id="feedback" style="border: 2px;background-color: beige;max-width: 500px;padding: 20px;border-radius: 8px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            <label for="firstname" style="font-family: fantasy;font-size:15px;">Name</label>
+            <br>
+            <input type="text" name="firstname" id="firstname" style="width: 400px;height: 40px;box-sizing: border-box;border: 2px solid rgb(95, 7, 7);border-radius: 7px;" >
+            <br>
+            <div style="display: none; font-size: 15px;color: red;font-family: cursive;font-weight: bold;" id="namedisplay" >Name is required!</div>
+            <br>
+            <label for="email" style="font-family: fantasy;font-size:15px;" >Email</label><br>
+            <input type="text" name="email" id="email" style="width: 400px;height: 40px;box-sizing: border-box;border: 2px solid rgb(95, 7, 7);border-radius: 7px;" >
+            <br>
+            <div style="display: none; font-size: 15px;color: red;font-family: cursive;font-weight: bold;" id="emaildisplay">Valid email is required! </div>
+            <br>
+            <label for="feedbacktext" style="font-family: fantasy;font-size:15px;">Feedback</label><br>
+            <textarea name="feedbacktext" id="feedbacktext"style="width: 400px;height: 100px;box-sizing: border-box;border: 2px solid rgb(95, 7, 7);border-radius: 7px;"></textarea>
+            <br>
+            <div style="display: none; font-size: 15px;color: red;font-family: cursive;font-weight: bold;" id="feedbackdisplay">Feedback is required!</div>
+            <br>
+            
+    
+    <button type="submit" style="font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif; border: none; width: 400px;height: 50px;background-color: rgb(129, 59, 31);border-radius: 7px;color: aliceblue;margin-bottom: 20px;box-sizing: border-box;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">SUBMIT</button>
+    <br>
+    <div style="display: none; font-size: 20px;color: green;font-weight: bold;font-family: cursive;" id="successmessage">Thankyou for your feedback!</div>
+        </form>
+
+
+  
+   
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
